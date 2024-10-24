@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>New Tab</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" href="{{ url_for('static', filename='plus.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='theme.css') }}">
+</head>
+<body>
+    <div id="main">
+        <div id="middle">
+            <div class="box-highlighted">
+                <div id="status" class="heading2">SEARCH google</div>
+                <div>
+                    <input id="input" type="text">
+                </div>
+            </div>
+            <!--<div class="box-highlighted heading2">-->
+            <!--    <input type="radio" name="engine" value="google">Google</input>-->
+            <!--    <input type="radio" name="engine" value="duckduckgo">Duck Duck Go</input>-->
+            <!--    <input type="radio" name="engine" value="lucky">I'm Feeling Lucky</input>-->
+            <!--</div>-->
+            <div id="bookmarks" class="heading3 box-highlighted">
+                <div>Book Marks Frequently Visited</div>
+                <div id="bookmarks-list" class="heading2"></div>
+            </div>
+            <!--<div id="results" class="heading2 box-highlighted">Results:</div>-->
+            <!--<div id="mode" class="heading2 box-highlighted">&lt;TAB&gt; TO CHANGE MODE (SEARCHING)</div>-->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
